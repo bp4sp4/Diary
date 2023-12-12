@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./App.module.css";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
-
+// 기본구조세팅
 function App() {
   return (
     <div className="App">
