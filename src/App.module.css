@@ -1,0 +1,50 @@
+.diary_contianer {
+  margin: 0 auto;
+  width: 80%;
+  border: 1px solid #333;
+  padding: 10px 0 30px 0;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form_wrapper {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+
+.form_wrapper CKEditor {
+  height: 100%;
+}
+
+
+.title_input {
+  width: 500px;
+  height: 40px;
+  margin: 10px;
+}
+
+.buttondisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttondisplay .submit_button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background: indianred;
+  border-radius: 5px;
+  margin-top: 40px;
+  vertical-align: middle;
+}
