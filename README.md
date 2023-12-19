@@ -1,8 +1,16 @@
-# Diary Mini Project(React)
+## Diary Mini Project(React) -> LostArk Open API
 
 ## 하는 이유 : 리액트 실력향상, 나만의 블로그 or 일기장
 
 ### 디자인 추후 계속 업데이트
+
+<h3> 23/12/19(화)</h3>
+
+- Diary Mini Project(React) -> LostArk Open API 사용하기 변경
+  - open api 사용
+  - 퍼블리싱 디자인연습
+- 홈페이지 변경사항
+  ![image](https://github.com/bp4sp4/Diary/assets/62207757/5732cfee-b81a-406a-886c-84eaa1117a98)
 
 <h3> 23/12/12(화)</h3>
 
