@@ -1,13 +1,13 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 
 import Character from "./charaters/charaters";
 const Router = () => {
   return (
-    <BrowserRouter basename="{process.env.PUBLIC_URL">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Character />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
