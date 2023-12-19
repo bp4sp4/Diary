@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bp4sp4.github.io/LostArk-Open-API/",
   "name": "diary",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +24,6 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://bp4sp4.github.io/LostArk-Open-API/",
   "eslintConfig": {
     "extends": [
       "react-app",
