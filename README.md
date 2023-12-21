@@ -1,6 +1,8 @@
 ## Diary Mini Project(React) -> LostArk Open API
 
-## 하는 이유 : 리액트 실력향상, 나만의 블로그 or 일기장
+## 하는 이유 : 리액트 실력향상, 나만의 블로그 or 일기장 -> LostArk Open API
+
+<h3>데모사이트 - <a href="https://bp4sp4.github.io/LostArk-Open-API/">Demo</a></h3>
 
 ### 디자인 추후 계속 업데이트
 
