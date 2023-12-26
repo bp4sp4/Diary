@@ -23,7 +23,7 @@ function Character() {
   }, []);
 
   return (
-    <div className="App">
+    <div className={styles.main}>
       <ColorSchemesExample />
       <h1 className={styles.header}>나의캐릭터들</h1>
       <div className={styles.lost_wrap}>

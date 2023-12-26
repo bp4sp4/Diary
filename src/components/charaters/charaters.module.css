@@ -1,4 +1,11 @@
 /* App.module.css */
+.main {
+  position: relative;
+  width: 1260px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
 .header {
   text-align: center;
 }
