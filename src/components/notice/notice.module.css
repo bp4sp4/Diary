@@ -23,3 +23,82 @@ body {
     border-bottom: 3px solid #000;
     font-family: Roboto sans-serif;
 }
+
+.tabs {
+    border-top: 0;
+    display: flex;
+}
+
+.tabs .tabsbtn {
+    flex: 1 1 0;
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 60px;
+    margin-top: -8px;
+    border-top: 0;
+    font-size: 20px;
+}
+
+.table {
+    margin-top: 35px;
+}
+
+.table .noticelist {
+    list-style: none;
+}
+
+.table .noticelist .noticeitem {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.table .noticelist .noticeitem>a {
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+.table .noticelist .noticeitem .type {
+    width: 100px;
+}
+
+.table .noticelist .noticeitem .date {
+    text-align: right;
+}
+
+
+
+
+
+.table .noticelist .noticeitem a>div {
+    display: table-cell;
+    padding: 10px 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination nav ul li {
+    margin: 30px 0 30px 0;
+}
+
+.pagination nav ul li button {
+    min-width: 40px;
+    height: 40px;
+    padding: 0 5px;
+    border-radius: 0;
+}
