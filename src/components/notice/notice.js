@@ -19,7 +19,9 @@ function Motice() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("../notice.json");
+        const response = await fetch(
+          "https://bp4sp4.github.io/LostArk-Open-API/Notice.json"
+        );
         const data = await response.json();
         setNoticeData(data);
       } catch (error) {
