@@ -12,7 +12,7 @@
 - [ ] 게임콘텐츠 포스트맨으로 json 파일 만들기<br>
 - [ ] 네이게이션 새로 디자인<br>
 - [ ] 전체적인 디자인 레벨업 해야함<br>
-
+<hr>
 <h3> 23/12/27~29(수~금)</h3>
 <h3>공지사항 추가</h3>
 
@@ -28,7 +28,8 @@ npm install @mui/material @emotion/react @emotion/styled
 
   - 편하게 부트스트랩 쓰려다가 혹시나 해서 Link to 설정하니 바로 연결완료
   - 네비게이션은 새로 디자인 해야함 부트스트랩 안씀
-  <hr>
+
+<hr>
 
   <h3> 23/12/27(수)</h3>
   <h3>api 어떤거 쓸건지 기획</h3>
@@ -44,8 +45,8 @@ npm install @mui/material @emotion/react @emotion/styled
   - open api 사용
   - 퍼블리싱 디자인연습
 - 홈페이지 변경사항
-  ![image](https://github.com/bp4sp4/Diary/assets/62207757/5732cfee-b81a-406a-886c-84eaa1117a98)
-
+![image](https://github.com/bp4sp4/Diary/assets/62207757/5732cfee-b81a-406a-886c-84eaa1117a98)
+<hr>
 <h3> 23/12/12(화)</h3>
 
 - 프로젝트 생성
