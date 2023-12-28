@@ -15,6 +15,9 @@
 
 ### 디자인 추후 계속 업데이트
 
+<h3>공지사항 추가</h3>
+-공지사항 완료 디자인 미완성
+
 <h3> 23/12/19(화)</h3>
 
 - Diary Mini Project(React) -> LostArk Open API 사용하기 변경
