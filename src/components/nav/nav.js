@@ -6,9 +6,11 @@ function ColorSchemesExample() {
     <>
       <div className={styles.navbar}>
         <Navbar bg="light" data-bs-theme="light">
-          <Navbar.Brand href="/LostArk-Open-API">나의정보</Navbar.Brand>
+          <Navbar.Brand href={process.env.PUBLIC_URL}>나의정보</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/LostArk-Open-API/notice/notice">공지</Nav.Link>
+            <Nav.Link href={process.env.PUBLIC_URL + "/notice/notice"}>
+              공지
+            </Nav.Link>
             <Nav.Link href="#features">게임콘텐츠</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
           </Nav>
