@@ -8,11 +8,8 @@ function Character() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "https://bp4sp4.github.io/LostArk-Open-API/Characters.json"
-        );
+        const response = await fetch("LostArk-Open-API/Characters.json");
         const data = await response.json();
-
         setCharacterData(data);
       } catch (error) {
         console.error("Error fetching data:", error);
