@@ -8,12 +8,40 @@
 
 ## To Do List
 
-- [ ] 공지사항 탭메뉴 디자인<br>
+- [x] 공지사항 탭메뉴 디자인<br>
 - [ ] 게임콘텐츠 포스트맨으로 json 파일 만들기<br>
 - [ ] 네이게이션 새로 디자인<br>
 - [ ] 전체적인 디자인 레벨업 해야함<br>
 <hr>
-<h3> 23/12/27~29(수~금)</h3>
+<h3> 23/12/29(금)</h3>
+
+- 탭메뉴 디자인이 가장 까다로웠음 useState를 전체를 디폴트로 잡음
+- tabsbtn css 디자인에 &.active를 넣었다 리액트 css 적는법을 배워간다.
+
+```
+ const [activeTab, setActiveTab] = useState("전체");
+
+// 사용자가 특정 탭을 클릭했을 때, 해당 탭을 활성화하는 함수
+  const handleTabChange = (tab) => {
+    ...
+    ...
+    setActiveTab(tab);
+  };
+    <button
+            onClick={() => handleTabChange("전체")}
+            className={`${styles.tabsbtn} ${
+              activeTab === "전체" ? styles.active : ""
+            }`}
+          >
+
+   &.active {
+        background-color: #fff;
+        border-bottom: 0;
+        color: #222;
+    }
+```
+
+<h3> 23/12/27~2(수~금)</h3>
 <h3>공지사항 추가</h3>
 
 - 공지사항 json 생성
