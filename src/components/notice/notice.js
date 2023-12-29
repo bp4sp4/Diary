@@ -15,6 +15,7 @@ function Motice() {
     상점: 1,
     이벤트: 1,
   });
+  const [activeTab, setActiveTab] = useState("전체");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,20 +33,26 @@ function Motice() {
     fetchData();
   }, []);
 
+  // 선택된 탭에 표시할 공지사항의 마지막 인덱스 계산
   const indexOfLastNotice = tabPages[selectedTab] * noticesPerPage;
+  // 선택된 탭에 표시할 공지사항의 첫 인덱스 계산
   const indexOfFirstNotice = indexOfLastNotice - noticesPerPage;
+  // 현재 선택된 탭에 표시할 공지사항 필터링 및 페이지에 맞게 슬라이싱
   const currentNotices = noticeData
     .filter((notice) => selectedTab === "전체" || notice.Type === selectedTab)
     .slice(indexOfFirstNotice, indexOfLastNotice);
-
+  // 페이지 변경 시 호출되는 함수
   const handleChangePage = (event, newPage) => {
+    // 현재 페이지 업데이트
     setCurrentPage(newPage);
+    // 선택된 탭의 페이지 업데이트
     setTabPages((prevPages) => ({ ...prevPages, [selectedTab]: newPage }));
   };
 
   const handleTabChange = (tab) => {
     setSelectedTab(tab);
     setCurrentPage(tabPages[tab]);
+    setActiveTab(tab);
   };
 
   return (
@@ -55,45 +62,57 @@ function Motice() {
         <h1 className={styles.header}>공지사항</h1>
         <div className={styles.tabs}>
           <button
-            className={styles.tabsbtn}
             onClick={() => handleTabChange("전체")}
+            className={`${styles.tabsbtn} ${
+              activeTab === "전체" ? styles.active : ""
+            }`}
           >
             전체
           </button>
           <button
-            className={styles.tabsbtn}
             onClick={() => handleTabChange("공지")}
+            className={`${styles.tabsbtn} ${
+              activeTab === "공지" ? styles.active : ""
+            }`}
           >
             공지
           </button>
           <button
-            className={styles.tabsbtn}
             onClick={() => handleTabChange("점검")}
+            className={`${styles.tabsbtn} ${
+              activeTab === "점검" ? styles.active : ""
+            }`}
           >
             점검
           </button>
           <button
-            className={styles.tabsbtn}
             onClick={() => handleTabChange("상점")}
+            className={`${styles.tabsbtn} ${
+              activeTab === "상점" ? styles.active : ""
+            }`}
           >
             상점
           </button>
           <button
-            className={styles.tabsbtn}
             onClick={() => handleTabChange("이벤트")}
+            className={`${styles.tabsbtn} ${
+              activeTab === "이벤트" ? styles.active : ""
+            }`}
           >
             이벤트
           </button>
         </div>
+        {/* ... (기존 코드 부분 생략) */}
+
         <div className={styles.table}>
           {currentNotices.map((notice, index) => (
             <ul key={index} className={styles.noticelist}>
               <li className={styles.noticeitem}>
                 <a href={notice.Link}>
                   <div className={styles.type}>
-                    <span className={styles.type_fix}>{notice.Type}</span>
+                    <span className={styles.types}>{notice.Type}</span>
                   </div>
-                  <div>{notice.Title}</div>
+                  <div className={styles.title}>{notice.Title}</div>
                   <div className={styles.date}>등록일: {notice.Date}</div>
                 </a>
               </li>

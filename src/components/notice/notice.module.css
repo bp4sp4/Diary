@@ -11,14 +11,16 @@ body {
 }
 
 
+/* 메인 */
 
 .noticemain {
     position: relative;
     width: 1000px;
     min-height: 100%;
     margin: 0 auto;
-
 }
+
+/* 공지사항 */
 
 .header {
     padding: 50px 0 25px;
@@ -26,6 +28,7 @@ body {
     font-family: Roboto sans-serif;
 }
 
+/* 탭바  */
 .tabs {
     border-top: 0;
     display: flex;
@@ -40,8 +43,21 @@ body {
     margin-top: -8px;
     border-top: 0;
     font-size: 20px;
+    background-color: #f9f9f9;
+    color: #888;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+
+    &.active {
+        background-color: #fff;
+        border-bottom: 0;
+        color: #222;
+    }
 }
 
+/* ------ 여기까지 ----- */
+
+/* 메인아이템들 */
 .table {
     margin-top: 35px;
 }
@@ -66,20 +82,30 @@ body {
     text-decoration: none;
 }
 
-
-
-
 .table .noticelist .noticeitem .type {
     width: 100px;
+}
+
+.table .noticelist .noticeitem .title {
+    width: 500px;
 }
 
 .table .noticelist .noticeitem .date {
     text-align: right;
 }
 
-
-
-
+.table .noticelist .noticeitem .type>span {
+    display: block;
+    width: 74px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 18px;
+    border: 1px solid #ddd;
+    line-height: 33px;
+    font-size: 15px;
+    text-align: center;
+    color: #222;
+}
 
 .table .noticelist .noticeitem a>div {
     display: table-cell;
@@ -89,9 +115,14 @@ body {
     text-align: left;
 }
 
+/* ------ 여기까지 ----- */
+
+/* 페이지네이션 */
+
 .pagination {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .pagination nav ul li {
@@ -104,3 +135,5 @@ body {
     padding: 0 5px;
     border-radius: 0;
 }
+
+/* ------ 여기까지 ----- */
