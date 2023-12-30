@@ -108,7 +108,7 @@ function Motice() {
           {currentNotices.map((notice, index) => (
             <ul key={index} className={styles.noticelist}>
               <li className={styles.noticeitem}>
-                <a href={notice.Link}>
+                <a target="_blank" href={notice.Link}>
                   <div className={styles.type}>
                     <span className={styles.types}>{notice.Type}</span>
                   </div>

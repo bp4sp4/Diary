@@ -1,4 +1,17 @@
 /* App.module.css */
+* {
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    "Helvetica Neue",
+    sans-serif;
+}
+
+
 .main {
   position: relative;
   width: 1260px;
@@ -8,6 +21,7 @@
 
 .header {
   text-align: center;
+  margin: 20px 0 20px 0;
 }
 
 .lost_wrap {
@@ -45,4 +59,8 @@
 
 .classinfo {
   text-align: center;
+}
+
+.classinfo>p {
+  margin: 5px;
 }
