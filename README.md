@@ -2,6 +2,7 @@
 
 ## 하는 이유 : 리액트 실력향상, 나만의 블로그 or 일기장 -> LostArk Open API
 
+<p>마우스 우클릭해서 새창으로 열어 봐주시면 편하게 보실수 있습니다. </p>
 <h3>데모사이트 - <a href="https://bp4sp4.github.io/LostArk-Open-API/">Demo</a></h3>
 
 ### 디자인 추후 계속 업데이트
