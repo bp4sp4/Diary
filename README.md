@@ -9,9 +9,30 @@
 ## To Do List
 
 - [x] 공지사항 탭메뉴 디자인<br>
-- [ ] 게임콘텐츠 포스트맨으로 json 파일 만들기<br>
-- [ ] 네이게이션 새로 디자인<br>
+- [x] 게임콘텐츠 포스트맨으로 json 파일 만들기<br>
+- [x] 네이게이션 새로 디자인<br>
 - [ ] 전체적인 디자인 레벨업 해야함<br>
+<hr>
+<h3> 23/12/30(토)</h3>
+
+- 게임콘텐츠 아직 미완성 디자인이 딱히 생각나지않음 추후 계속 고민
+- 네이게이션 디자인
+- 폰트적용
+- 자잘한 디자인들 조금쏙 레벨업
+
+```
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'GmarketSansMedium';
+}
+```
+
 <hr>
 <h3> 23/12/29(금)</h3>
 
@@ -41,6 +62,7 @@
     }
 ```
 
+<hr>
 <h3> 23/12/27~2(수~금)</h3>
 <h3>공지사항 추가</h3>
 

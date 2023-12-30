@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'GmarketSansMedium';
 }
 
 .main {
@@ -12,8 +17,9 @@
 }
 
 .header {
-  text-align: center;
-  margin: 20px 0 20px 0;
+  text-align: left;
+
+  margin: 20px 0 20px 70px;
 }
 
 .lost_wrap {
