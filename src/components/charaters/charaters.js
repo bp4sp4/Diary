@@ -1,6 +1,14 @@
+import "swiper/css";
+import "swiper/css/navigation";
 import React, { useState, useEffect } from "react";
 import styles from "./charaters.module.css";
 import ColorSchemesExample from "../nav/nav";
+import { Pagination, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "./style.css";
+// Import Swiper styles
+
+// import required modules
 
 function Character() {
   const [characterData, setCharacterData] = useState([]);
@@ -23,25 +31,40 @@ function Character() {
 
   return (
     <>
-      <ColorSchemesExample />
-      <div className={styles.main}>
-        <h1 className={styles.header}>나의캐릭터들</h1>
-        <div className={styles.lost_wrap}>
-          <div className={styles.lost_charater}>
-            {characterData.map((character, index) => (
-              <div key={index} className={styles.characterCard}>
-                <img
-                  src={character.CharacterImage}
-                  alt={`Character : ${index}`}
-                  className={styles.characterImage}
-                />
-                <div className={styles.classinfo}>
-                  <p>서버 : {character.ServerName}</p>
-                  <p>클래스 : {character.CharacterClassName}</p>
-                  <p>아이템 : {character.ItemAvgLevel}</p>
-                </div>
-              </div>
-            ))}
+      <div className={styles.wrap}>
+        <ColorSchemesExample />
+        <div className={styles.main}>
+          <h3 className={styles.header}>보유캐릭터</h3>
+          <div className={styles.lost_wrap}>
+            <Swiper
+              autoplay={{
+                delay: 3000, // set the delay in milliseconds
+                disableOnInteraction: false, // allow autoplay to continue after user interactions
+              }}
+              loop={true}
+              pagination={{
+                type: "fraction",
+              }}
+              modules={[Pagination, Autoplay]}
+              className="mySwiper"
+            >
+              {characterData.map((character, index) => (
+                <SwiperSlide key={index}>
+                  <div className={styles.characterCard}>
+                    <img
+                      src={character.CharacterImage}
+                      alt={`Character : ${index}`}
+                      className={styles.characterImage}
+                    />
+                    <div className={styles.classinfo}>
+                      <p>서버 : {character.ServerName}</p>
+                      <p>클래스 : {character.CharacterClassName}</p>
+                      <p>아이템 : {character.ItemAvgLevel}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>

@@ -9,23 +9,33 @@
   font-family: 'GmarketSansMedium';
 }
 
+.wrap {
+  max-width: 390px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
 .main {
   position: relative;
-  width: 1260px;
-  min-height: 100%;
-  margin: 0 auto;
+  width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .header {
   text-align: left;
 
-  margin: 20px 0 20px 70px;
+  margin: 20px 0 20px 20px;
 }
 
 .lost_wrap {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 5px;
 
 }
 
@@ -61,4 +71,17 @@
 
 .classinfo>p {
   margin: 5px;
+}
+
+.swiper-pagination {
+  display: inline-flex !important;
+  padding: 2px 10px !important;
+  border-radius: 15px !important;
+  background: var(--gray-color) !important;
+  color: var(--white-color) !important;
+  font-size: 12px !important;
+  width: auto !important;
+  left: initial !important;
+  right: 5% !important;
+  gap: 2px !important;
 }
