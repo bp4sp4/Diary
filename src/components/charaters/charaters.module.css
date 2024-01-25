@@ -51,10 +51,10 @@
 
 
 .characterCard {
-  width: 360px;
+  width: 200px;
   background-color: #fff;
   border: 1px solid #e2e2e2;
-  margin: 10px;
+  margin: 0 auto;
 }
 
 .characterCard .characterImage {
