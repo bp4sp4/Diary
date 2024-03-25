@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/LostArk-Open-API/static/css/main.20239956.css",
-    "main.js": "/LostArk-Open-API/static/js/main.71b6edb6.js",
+    "main.css": "/LostArk-Open-API/static/css/main.4bad6ce2.css",
+    "main.js": "/LostArk-Open-API/static/js/main.52d96709.js",
     "index.html": "/LostArk-Open-API/index.html",
-    "main.20239956.css.map": "/LostArk-Open-API/static/css/main.20239956.css.map",
-    "main.71b6edb6.js.map": "/LostArk-Open-API/static/js/main.71b6edb6.js.map"
+    "main.4bad6ce2.css.map": "/LostArk-Open-API/static/css/main.4bad6ce2.css.map",
+    "main.52d96709.js.map": "/LostArk-Open-API/static/js/main.52d96709.js.map"
   },
   "entrypoints": [
-    "static/css/main.20239956.css",
-    "static/js/main.71b6edb6.js"
+    "static/css/main.4bad6ce2.css",
+    "static/js/main.52d96709.js"
   ]
 }
