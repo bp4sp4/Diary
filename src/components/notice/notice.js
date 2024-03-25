@@ -3,7 +3,7 @@ import styles from "./notice.module.css";
 import ColorSchemesExample from "../nav/nav";
 import { Pagination } from "@mui/material";
 
-function Motice() {
+function Notice() {
   const [noticeData, setNoticeData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [noticesPerPage] = useState(10);
@@ -59,7 +59,6 @@ function Motice() {
     <div className={styles.main}>
       <ColorSchemesExample />
       <div className={styles.noticemain}>
-        <h1 className={styles.header}>공지사항</h1>
         <div className={styles.tabs}>
           <button
             onClick={() => handleTabChange("전체")}
@@ -138,4 +137,4 @@ function Motice() {
   );
 }
 
-export default Motice;
+export default Notice;

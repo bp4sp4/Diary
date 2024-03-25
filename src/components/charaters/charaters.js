@@ -5,6 +5,7 @@ import styles from "./charaters.module.css";
 import ColorSchemesExample from "../nav/nav";
 import { Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Events from "../events/events";
 import "./style.css";
 // Import Swiper styles
 
@@ -66,6 +67,7 @@ function Character() {
               ))}
             </Swiper>
           </div>
+          <Events />
         </div>
       </div>
     </>

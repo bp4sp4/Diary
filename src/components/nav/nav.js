@@ -5,7 +5,7 @@ function ColorSchemesExample() {
     <>
       <div className={styles.wrap}>
         <div className={styles.top}>
-          <h3>나의 정보</h3>
+          <h3>My Info</h3>
           <div className={styles.navbar}>
             <ul className={styles.menu_list}>
               <li className={styles.menu_items}>
@@ -16,14 +16,6 @@ function ColorSchemesExample() {
               <li className={styles.menu_items}>
                 <Link className={styles.navname} to="/notice/notice">
                   공지
-                </Link>
-              </li>
-              <li className={styles.menu_items}>
-                <Link
-                  className={styles.navname}
-                  to="/gamecontents/gamecontents"
-                >
-                  게임콘텐츠
                 </Link>
               </li>
             </ul>
