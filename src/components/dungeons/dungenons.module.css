@@ -5,7 +5,7 @@ li {
 
 .main {
     display: flex;
-    max-width: 390px;
+    max-width: 380px;
     width: 100%;
     display: flex;
 }
