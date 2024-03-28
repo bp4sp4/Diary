@@ -6,28 +6,17 @@ import ColorSchemesExample from "../nav/nav";
 import { Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Events from "../events/events";
+import Dungeons from "../dungeons/dungeons";
+import Characters from "./Characters.json";
 import "./style.css";
-// Import Swiper styles
-
-// import required modules
+import Dungeon from "../dungeons/dungeons";
+import DungeonsComponent from "../dungeons/dungeons";
 
 function Character() {
   const [characterData, setCharacterData] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://bp4sp4.github.io/LostArk-Open-API/Characters.json"
-        );
-        const data = await response.json();
-        setCharacterData(data);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
+    setCharacterData(Characters);
   }, []);
 
   return (
@@ -67,6 +56,7 @@ function Character() {
               ))}
             </Swiper>
           </div>
+          <DungeonsComponent />
           <Events />
         </div>
       </div>

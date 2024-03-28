@@ -15,7 +15,7 @@ function ColorSchemesExample() {
               </li>
               <li className={styles.menu_items}>
                 <Link className={styles.navname} to="/notice/notice">
-                  공지
+                  공지사항
                 </Link>
               </li>
             </ul>

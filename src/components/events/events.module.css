@@ -1,0 +1,55 @@
+a:visited {
+    color: black;
+}
+
+.main {
+    max-width: 390px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.main .main__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0 20px 20px;
+}
+
+.main .main__event__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .main__event__wrap .main__event__img {
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.main .main__event__font {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.main .main__event__date {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.main .main__event__lorem__wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px 20px;
+    position: relative;
+}
+
+.main .main__event__lorem__wrap .main__event__link {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    text-decoration: none;
+    color: #4b4b4b;
+    font-weight: 100;
+}
