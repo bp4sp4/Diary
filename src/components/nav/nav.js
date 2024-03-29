@@ -5,7 +5,9 @@ function ColorSchemesExample() {
     <>
       <div className={styles.wrap}>
         <div className={styles.top}>
-          <h3>My Info</h3>
+          <Link to="/">
+            <h3>My Info</h3>
+          </Link>
           <div className={styles.navbar}>
             <ul className={styles.menu_list}>
               <li className={styles.menu_items}>

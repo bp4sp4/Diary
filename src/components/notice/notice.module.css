@@ -29,7 +29,7 @@
     height: 60px;
     margin-top: -8px;
     border-top: 0;
-    font-size: 20px;
+    font-size: 15px;
     background-color: #f9f9f9;
     color: #888;
     border: 0;
@@ -70,7 +70,7 @@
 }
 
 .table .noticelist .noticeitem .type {
-    width: 100px;
+    width: 80px;
 }
 
 

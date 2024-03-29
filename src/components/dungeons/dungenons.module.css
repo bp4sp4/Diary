@@ -21,10 +21,12 @@ li {
     display: flex;
     align-items: center;
     margin-right: 25px;
+    position: relative;
 }
 
 .main .main__contents .main_content_img {
     width: 100%;
+    position: relative;
 }
 
 .main .main__contents .main__contents__item__name {

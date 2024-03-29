@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./notice.module.css";
 import ColorSchemesExample from "../nav/nav";
 import { Pagination } from "@mui/material";
+import NoticeData from "./Notice.json";
 
 function Notice() {
   const [noticeData, setNoticeData] = useState([]);
@@ -18,20 +19,8 @@ function Notice() {
   const [activeTab, setActiveTab] = useState("전체");
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://bp4sp4.github.io/LostArk-Open-API/Notice.json"
-        );
-        const data = await response.json();
-        setNoticeData(data);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
+    setNoticeData(NoticeData);
+  });
 
   // 선택된 탭에 표시할 공지사항의 마지막 인덱스 계산
   const indexOfLastNotice = tabPages[selectedTab] * noticesPerPage;

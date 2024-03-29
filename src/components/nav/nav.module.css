@@ -2,6 +2,12 @@ body {
     background-color: #ededed !important;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+
+
 .wrap {
     max-width: 390px;
     width: 100%;
@@ -16,6 +22,7 @@ body {
     justify-content: center;
     padding: 20px 20px;
     background-color: #fff;
+    color: #000;
 }
 
 
