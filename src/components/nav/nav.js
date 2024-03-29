@@ -1,5 +1,6 @@
 import styles from "./nav.module.css";
 import { Link } from "react-router-dom";
+
 function ColorSchemesExample() {
   return (
     <>
@@ -18,6 +19,11 @@ function ColorSchemesExample() {
               <li className={styles.menu_items}>
                 <Link className={styles.navname} to="/notice/notice">
                   공지사항
+                </Link>
+              </li>
+              <li className={styles.menu_items}>
+                <Link className={styles.navname} to="/guilds/guilds">
+                  길드랭킹
                 </Link>
               </li>
             </ul>

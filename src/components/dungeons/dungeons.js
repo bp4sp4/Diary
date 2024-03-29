@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import dungeonsData from "./dungeons.json"; // Rename the import
 import styles from "./dungenons.module.css";
-import { Tooltip } from "@chakra-ui/react";
 
 function DungeonsComponent() {
   const [dungeons, setDungeons] = useState([]);
@@ -23,6 +22,7 @@ function DungeonsComponent() {
               <img
                 className={styles.main_content_img}
                 src={dungeon.Image}
+                alt={dungeon.Name}
               ></img>
             </li>
           </ul>
