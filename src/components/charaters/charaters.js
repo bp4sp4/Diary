@@ -10,6 +10,8 @@ import Characters from "./Characters.json";
 import "./style.css";
 import DungeonsComponent from "../dungeons/dungeons";
 
+import Footer from "../footer/footer";
+
 function Character() {
   const [characterData, setCharacterData] = useState([]);
 
@@ -58,6 +60,7 @@ function Character() {
           <Events />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

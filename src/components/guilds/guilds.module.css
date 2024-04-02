@@ -1,7 +1,68 @@
 .main {
     max-width: 350px;
     background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main .guild__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 20px 20px
+}
+
+.subtit {
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.subtit .subtit__name {
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.subtit .subtit__mastername {
+    margin-left: 95px;
+    font-size: 15px;
+}
+
+.subtit .subtit__membercount {
+    margin-left: 73px;
+    font-size: 15px;
+}
+
+.guildsList {
     display: flex;
-    justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #ededed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.guildsList:last-child {
+    border: none;
+}
+
+.guildsList .guild__item {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.guildsList .guild__item__name {
+    width: 130px;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.guildsList .guild__item__mastername {
+    margin-left: 20px;
+    width: 110px;
+    font-size: 13px;
+}
+
+.guildsList .guild__item__membercount {
+    margin-left: 20px;
+    width: 30px;
+    font-size: 13px;
 }

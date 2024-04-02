@@ -3,6 +3,7 @@ import styles from "./notice.module.css";
 import ColorSchemesExample from "../nav/nav";
 import { Pagination } from "@mui/material";
 import NoticeData from "./Notice.json";
+import Footer from "../footer/footer";
 
 function Notice() {
   const [noticeData, setNoticeData] = useState([]);
@@ -122,6 +123,7 @@ function Notice() {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
