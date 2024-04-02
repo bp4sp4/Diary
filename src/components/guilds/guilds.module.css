@@ -1,0 +1,7 @@
+.main {
+    max-width: 350px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
